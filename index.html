@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="survey-form">
+        <header class="header">
+            <h1 id="title" class="text-center">SURVEY FORM</h1>
+            <p>Fill the forn below to apply</p>
+        </header>
+        <div class="form">
+            <label class="label">Name:</label>
+            <input class="input" type="text" name="name" id="name" placeholder=" Enter your full name" required>
+        </div>
+        <div class="form">
+            <label class="label">Email:</label>
+            <input class="input" type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form">
+            <label class="label">Age:</label>
+            <input class="input" type="date, month, number" name="date, month, number" id="date, month, number" placeholder="D/month/year" required>
+        </div>
+        <div class="form">
+            <label class="label">Phone Number:</label>
+            <input class="input" type="number" name="number" id="number" placeholder="Phone Number" required>
+        </div>
+        <div class="form">
+            <label>Marital Status:</label>
+            <select id="dropdown" name="role" class="form-control" >
+                <option disabled="" selected="" value="">Select marital status</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorse</option>
+                <option>Complicated</option>
+            </select>
+        </div>
+        <div class="social">
+            <label class="option">
+                How did you hear about us?
+                <span>(Optional)</span>
+            </label>
+            <ul style="list-style: none;" class="right">
+                <li class="checkbox"><label><input name="prefer" value="Facebook" type="checkbox" class="input-checkbox">Facebook</label></li>
+                <li class="checkbox"><label><input name="prefer" value="Instagram" type="checkbox" class="input-checkbox">Instagram</label></li>
+                <li class="checkbox"><label><input name="prefer" value="Twitter" type="checkbox" class="input-checkbox">Twitter</label></li>
+                <li class="checkbox"><label><input name="prefer" value="Fliers" type="checkbox" class="input-checkbox">Fliers</label></li>
+            </ul>
+        </div>
+        <div class="recomend">
+            <label class="option" id="label-radio">Would you like to recomend our page?</label>
+               <label><input name="radio-buttons" value="1" type="radio" class="recommendation">Yes</label>
+               <label><input name="radio-buttons" value="2" type="radio" class="recommendation">Maybe</label>
+              <label><input name="radio-buttons" value="3" type="radio" class="recommendation">No</label>
+        </div>
+        <hr>
+        <div class="comment">
+            <h2>Any comment or suggestions?</h2>
+            <textarea rows="4"  placeholder="Enter your comment here..."></textarea>
+           <br>
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </div>
+    
+</body>
+</html>
